@@ -1,0 +1,43 @@
+/*menu bar styling*/
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background: rgba(0, 0, 0, 0.3);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:99;
+}
+
+/* Styling for the logo link */
+.header .logo {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Flex container for navigation links */
+.nav {
+    display: flex;
+}
+
+/* Styling for navigation links */
+.nav a {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+}
+
+/* General link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f7f6f1; */
+    background: url('room3.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+}
+
+.container h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-weight: 1000;
+    color: #fffefd;
+}
+
+#addUserForm {background-color: #f7f6f1ac; margin-top: 10px; width:35%;}
+
+/*Add User Form*/
+#addUserForm input[type="text"],
+#addUserForm input[type="password"] {
+    padding: 3px;   
+    border-radius: 5px;
+    border-color: #f7f6f1;
+    background-color: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
+}
+
+/*Add user button*/
+.add_user {
+    border-radius: 20px;
+    background-color: #e2e1e1;
+    border-color: #d7dbd3;
+    border-width: 0.3px;
+    width: 8%;
+    padding: 0.5%;
+    font-weight: 800;
+}
+
+/*Submit button */
+#addUserForm input[type="submit"] {
+    background-color: #a48972;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    height: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 35px;
+    font-weight: 800;
+}
+
+#addUserForm table tr td:first-child {
+    text-align: left; /* Align text to the left for the first column */
+}
+
+
+#addUserForm table input[type="text"],
+#addUserForm table input[type="password"] {
+    width: 100%; 
+    padding: 5px;
+    margin: 5px 0; 
+}
+
+#addUserForm table td {
+    padding: 7px; /* Reduce padding inside table cells */
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.viewUserTable {
+    border: 2px solid #231f1f92; /* Border for the table */
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 12px rgba(192, 192, 192, 0.2);
+    max-width: 100%; /* Full width for the table */
+    margin-top: 20px; /* Margin at the top of the table */
+    border-collapse: collapse; /* Collapse table borders */
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+.viewUserTable table {
+    width: 100%; /* Ensure the table spans the full width of the container */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.viewUserTable th, .viewUserTable td {
+    padding: 10px; /* Padding inside table headers and cells */
+    text-align: center; /* Center align text in headers and cells */
+    word-wrap: break-word; /* Ensure long words break to fit cell */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.viewUserTable th {
+    background-color: #c4c0b6d7;
+    color: #fff;
+}
+
+.viewUserTable tr:nth-child(odd) {
+    background-color: #e9e6e24a;
+}
+
+/* Basic styling for the buttons/links */
+.button-update,
+.button-delete {
+    width:80px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff; /* Adjust color as needed */
+    color: #000000; /* Text color */
+    border: 1px solid #f0ecec;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect */
+.button-update:hover,
+.button-delete:hover {
+    background-color: #e9e6e2; /* Darker shade of primary color */
+    border-color: #c0a791; /* Darker shade of primary color */
+    color: #fff; /* Text color on hover */
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .viewUserTable th,
+    .viewUserTable td {
+        padding: 5px;
+        font-size: 13px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    #addUserForm {
+        width: 100%;
+    }
+
+    .add_user {
+        width: 15%;
+    }
+
+    #addUserForm input[type="submit"] {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .viewUserTable {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .viewUserTable table {
+        width: 100%;
+    }
+}
